@@ -98,7 +98,7 @@ function ContactForm({ onSave, editContact, onCancel }) {
 
         {editContact && (
           <button type="button" className="cancel-btn" onClick={onCancel}>
-            Cancel Eiting
+            Cancel Editing
           </button>
         )}
       </form>
