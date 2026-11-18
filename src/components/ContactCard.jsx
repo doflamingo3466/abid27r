@@ -1,12 +1,7 @@
-
 function ContactCard({ contact, onEdit, onDelete }) {
-
   return (
     <div className="contact-card">
-
-      <div className="avatar">
-        {contact.name.charAt(0).toUpperCase()}
-      </div>
+      <div className="avatar">{contact.name.charAt(0).toUpperCase()}</div>
 
       <div className="contact-info">
         <h3>{contact.name}</h3>
@@ -15,23 +10,14 @@ function ContactCard({ contact, onEdit, onDelete }) {
       </div>
 
       <div className="actions">
-
-        <button
-          className="edit-btn"
-          onClick={() => onEdit(contact)}
-        >
+        <button className="edit-btn" onClick={() => onEdit(contact)}>
           Edit
         </button>
 
-        <button
-          className="delete-btn"
-          onClick={() => onDelete(contact.id)}
-        >
+        <button className="delete-btn" onClick={() => onDelete(contact.id)}>
           Delete
         </button>
-
       </div>
-
     </div>
   );
 }
